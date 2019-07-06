@@ -1,0 +1,25 @@
+.todo-input {
+  height: 34px;
+  width: 200px;
+  outline: none;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  margin: 10px 5px;
+}
+
+.btn {
+  border: 1px solid #ccc;
+  padding: 12px 10px;
+  min-width: 100px;
+  margin: 5px;
+  font-size: 14px;
+}
+
+.todo {
+  display: inline-block;
+  margin-right: 20px;
+  min-width: 200px;
+  padding: 12px 10px;
+  background: #fff;
+  border: 1px solid #ccc;
+}

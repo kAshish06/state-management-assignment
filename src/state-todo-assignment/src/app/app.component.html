@@ -1,0 +1,21 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>Welcome to {{ title }}!</h1>
+</div>
+<h1>Todo List</h1>
+<input
+  type="text"
+  placeholder="add your next todo"
+  [(ngModel)]="newTodo"
+  class="todo-input"
+/><button class="btn" (click)="addTodo()">
+  Add todo
+</button>
+<div *ngFor="let todo of todoList" style="margin: 15px 10px">
+  <div class="todo">{{ todo.name }}</div>
+  <button class="btn" (click)="changeTodoStatus(todo)">
+    <span *ngIf="!todo.completed">Mark completed</span>
+    <span *ngIf="todo.completed">Mark pending</span>
+  </button>
+  <button class="btn" (click)="deleteTodo(todo)">Delete</button>
+</div>
