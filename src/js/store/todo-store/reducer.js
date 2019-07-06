@@ -1,7 +1,7 @@
 const todoReducer = (action, state) => {
   switch (action.type) {
     case "ADD_TODO": {
-      state[action.payload.id] = action.payload;
+      state.push(action.payload);
       break;
     }
     case "UPDATE_TODO": {

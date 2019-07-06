@@ -6,8 +6,8 @@ const todoStore = createStore(
     {
       reducer: todoReducer,
       feature: "todoList",
-      // initialState: []
-      initialState: {}
+      initialState: []
+      // initialState: {}
     }
   ])
 );

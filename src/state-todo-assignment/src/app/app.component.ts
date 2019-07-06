@@ -30,7 +30,7 @@ export class AppComponent implements OnInit {
     });
 
     todoStore.subscribe(state => {
-      this.todoList = this.createTodoList(state.todoList);
+      this.todoList = state.todoList;
     });
   }
   createTodoList(todoHashMap) {
